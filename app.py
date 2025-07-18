@@ -55,4 +55,6 @@ def open_browser():
 #     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
 #         threading.Timer(1, open_browser).start()
 #     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
 
